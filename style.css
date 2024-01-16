@@ -12,20 +12,19 @@ body{
     padding: 0;
     height: 100vh;
     font-family:  "Montserrat", sans-serif;
-    
+    color:#000;
 }
 *{
     box-sizing: border-box;
+    color:#000;
 }
 .main-container{
-    /* height: 100vh; */
-    width: 400px;
-    height: 500px;
-    /* background-image: linear-gradient(to bottom right,#95d6ea,#62a1c7,#15719f); */
+    max-width: 400px;
+    max-width: 500px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0  100px rgba(13, 109, 228, 0.5);
-    /* position: relative; */
+   
 }
 .search{
     gap: 3px;
@@ -48,52 +47,40 @@ body{
     background-color: #fff;
 }
 .weather-icon{
-    height: 120px;
+    height: 150px;
     width: inherit;
-    /* position: absolute; */
     left: 50%;
     transition: 0.2s;
-    /* transform: translate(-50%); */
+    visibility: hidden;
 }
-.weather-icon i{
-    font-size: 100px;
-    
+.weather-icon img{
+   width: 150px;
+   height: 150px;    
 }
+
 .temp{
-    /* margin: 10px; */
     height: 70px;
 }
 .temp h2, .state h2{
     font-size: 50px;
-    color: #fff;
-    /* flex-direction: column; */
+    color: #000;
 }
 .state{
     height: 50px;
 }
 .info{
     color: #fff;
-    /* gap: 10px; */
     margin-top: 40px;
+    padding-bottom: 40px;
 }
 .current-condition i, .wind-speed i{
     font-size: 30px;
-}
-.cloudy{
-    color: #c2bfba;
-}
-.sunny{
-    color: #fcd440;
-}
-.bxs-sun{
-    color: #fcd440;
 }
 .search input:hover, .search-icon > .bx-search{
     cursor: pointer;
    
 }
 .search input:hover{
-    /* outline: 1px solid #4e1313; */
     background-color: #add6e3;
     color: #000;
     transition: 0.25s;
@@ -103,17 +90,7 @@ body{
     transition: 0.25s;
 }
 
-/* @media(max-width:412){
-    body{
-        height: 100vh;
-        display: flex;
-        flex: 1;
-    }
-    
-} */
-
-
-/* Below are utility classes */
+/* This are some utility classes */
 .flex{
     display: flex;
 }
@@ -139,4 +116,7 @@ body{
 }
 .flex-direction{
     flex-direction: column;
+}
+.visible{
+    visibility: visible;
 }
